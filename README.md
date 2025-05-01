@@ -1,4 +1,5 @@
 # dynamo-quantification-revit
+
 Dynamo and Dynamo Player scripts developed for automating the quantification analysis of doors, windows, floor finishes, and brick walls in Autodesk Revit. 
 # Dynamo Scripts for Efficient Quantification in Revit
 
@@ -9,7 +10,7 @@ This repository contains custom Dynamo and Dynamo Player scripts created to auto
 - Door Quantification Script
 - Window Quantification Script
 - Floor Finish Quantification Script
-- Brick Wall Area Script
+- Brick Wall Quantification Script
 
 ## Requirements
 - Autodesk Revit 2023 or later

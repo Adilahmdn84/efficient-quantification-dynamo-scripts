@@ -13,18 +13,18 @@ This repository contains custom Dynamo scripts created to automate the quantific
 - Brick Wall Quantification Script
 
 ## Requirements
-- Autodesk Revit 2023 or later
+- Autodesk Revit 2024 or later
 - Dynamo for Revit
 - Optional: Excel for exported data
 
 ## How to Use
 1. Open Revit and load your model.
-2. Open Dynamo or Dynamo Player.
+2. Open Dynamo and Dynamo Player.
 3. Load the script from this repository.
 4. Follow on-screen inputs to run the analysis.
 
 ## Author
-Adilla [Your Full Name]  
+NORADILLAH BINTI HAMDAN  
 Diploma in Construction Technology (BIM)  
 Kolej Kemahiran Tinggi MARA Sri Gading  
 2025

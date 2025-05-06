@@ -15,7 +15,6 @@ This repository contains custom Dynamo scripts created to automate the quantific
 ## Requirements
 - Autodesk Revit 2024 or later
 - Dynamo for Revit
-- Optional: Excel for exported data
 
 ## How to Use
 1. Open Revit and load your model.

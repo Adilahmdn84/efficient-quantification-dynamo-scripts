@@ -42,7 +42,7 @@
       "Name": "(Wall) 05 Total cost per pallet (RM)",
       "Type": "number",
       "Type2": "number",
-      "Value": "231",
+      "Value": "374.40",
       "NumberType": "Double",
       "Description": "Creates a number",
       "SelectedIndex": 0
@@ -52,7 +52,7 @@
       "Name": "(Wall) 04 Total Bricks by pallet",
       "Type": "number",
       "Type2": "number",
-      "Value": "660",
+      "Value": "720",
       "NumberType": "Double",
       "Description": "Creates a number",
       "SelectedIndex": 0
@@ -62,7 +62,7 @@
       "Name": "(Wall) 02 Width Size of Brick (w)",
       "Type": "number",
       "Type2": "number",
-      "Value": "112.5",
+      "Value": "100",
       "NumberType": "Double",
       "Description": "Creates a number",
       "SelectedIndex": 0
@@ -72,7 +72,7 @@
       "Name": "(Wall) 03 Height Size of Brick",
       "Type": "number",
       "Type2": "number",
-      "Value": "75",
+      "Value": "65",
       "NumberType": "Double",
       "Description": "Creates a number",
       "SelectedIndex": 0
@@ -102,7 +102,7 @@
       "Name": "(Wall) 01 Length Size of Brick",
       "Type": "number",
       "Type2": "number",
-      "Value": "225",
+      "Value": "215",
       "NumberType": "Double",
       "Description": "Creates a number",
       "SelectedIndex": 0
@@ -129,22 +129,22 @@
     {
       "Id": "9c878a064ae34a61b8618b2fcc6517c2",
       "Name": "(Wall) 03 Total Cost of Pallet Brick (RM)",
-      "Type": "integer",
-      "InitialValue": "384384",
+      "Type": "float",
+      "InitialValue": "775756.8",
       "Description": "Visualizes a node's output"
     },
     {
       "Id": "b8d9fbc724584d03a0b675e18b74d024",
       "Name": "(Wall) 01 Total Number of Bricks",
       "Type": "float",
-      "InitialValue": "1098185",
+      "InitialValue": "1491807",
       "Description": "Find the sum of a series of numbers\n\nMath.Sum (values: double[]): double"
     },
     {
       "Id": "e3d4a9ee60b74c0888f94e6361c71c8c",
       "Name": "(Wall) 02 Total Number of pallet",
       "Type": "integer",
-      "InitialValue": "1664",
+      "InitialValue": "2072",
       "Description": "Returns the first integer greater than the number\n\nMath.Ceiling (number: double): int"
     },
     {
@@ -179,7 +179,7 @@
       "Id": "028cd359a7fa4855931302021d3d7e04",
       "Name": "Overall Total Material Cost (RM)",
       "Type": "float",
-      "InitialValue": "546282.02",
+      "InitialValue": "937654.82",
       "Description": "Visualizes a node's output"
     },
     {
@@ -1033,7 +1033,7 @@
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
-      "WatchWidth": 64.8,
+      "WatchWidth": 80.0,
       "WatchHeight": 38.4,
       "Id": "9c878a064ae34a61b8618b2fcc6517c2",
       "NodeType": "ExtensionNode",
@@ -1120,7 +1120,7 @@
       ],
       "Replication": "Disabled",
       "Description": "Creates a number",
-      "InputValue": 231.0
+      "InputValue": 374.4
     },
     {
       "ConcreteType": "CoreNodeModels.Input.DoubleInput, CoreNodeModels",
@@ -1141,7 +1141,7 @@
       ],
       "Replication": "Disabled",
       "Description": "Creates a number",
-      "InputValue": 660.0
+      "InputValue": 720.0
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -1379,7 +1379,7 @@
       ],
       "Replication": "Disabled",
       "Description": "Creates a number",
-      "InputValue": 112.5
+      "InputValue": 100.0
     },
     {
       "ConcreteType": "CoreNodeModels.Input.DoubleInput, CoreNodeModels",
@@ -1400,7 +1400,7 @@
       ],
       "Replication": "Disabled",
       "Description": "Creates a number",
-      "InputValue": 75.0
+      "InputValue": 65.0
     },
     {
       "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
@@ -1981,7 +1981,7 @@
       ],
       "Replication": "Disabled",
       "Description": "Creates a number",
-      "InputValue": 225.0
+      "InputValue": 215.0
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -2399,115 +2399,6 @@
       "FunctionSignature": "DSCore.Math.Round@double,int",
       "Replication": "Auto",
       "Description": "Rounds a number to a specified number of fractional digits.\n\nMath.Round (number: double, digits: int): double"
-    },
-    {
-      "ConcreteType": "DSRevitNodesUI.Categories, DSRevitNodesUI",
-      "SelectedIndex": 487,
-      "SelectedString": "OST_Roofs",
-      "Id": "2676d41337024589b61ab3fe9ce8ffe2",
-      "NodeType": "ExtensionNode",
-      "Inputs": [],
-      "Outputs": [
-        {
-          "Id": "041b601078524c2db43b17e9cc9e6c21",
-          "Name": "Category",
-          "Description": "The selected Category.",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "All built-in categories."
-    },
-    {
-      "ConcreteType": "DSRevitNodesUI.ElementsOfCategory, DSRevitNodesUI",
-      "Id": "13150e076099428b9e19cc38b72433f0",
-      "NodeType": "ExtensionNode",
-      "Inputs": [
-        {
-          "Id": "7ca756905b024ea9875eaaadc963a36a",
-          "Name": "Category",
-          "Description": "The Category",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Outputs": [
-        {
-          "Id": "17cb9ba78c354c4990aa6b501b8c4d1b",
-          "Name": "Elements",
-          "Description": "An element class.",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "Get all elements of the specified category from the model."
-    },
-    {
-      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
-      "Id": "b8ddd5ff7d8f4f17af691d4120be2588",
-      "NodeType": "FunctionNode",
-      "Inputs": [
-        {
-          "Id": "9f87b382a0be4f7aab28da3b275094a3",
-          "Name": "element",
-          "Description": "Revit.Elements.Element",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "479e3de6516a42da80f92be65b0f6f5d",
-          "Name": "parameterName",
-          "Description": "The name of the parameter whose value you want to obtain.\n\nstring",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Outputs": [
-        {
-          "Id": "18d25b3991254ba9b17ecf48ade4d63c",
-          "Name": "var[]..[]",
-          "Description": "var[]..[]",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "FunctionSignature": "Revit.Elements.Element.GetParameterValueByName@string",
-      "Replication": "Auto",
-      "Description": "Get the value of one of the element's parameters.\n\nElement.GetParameterValueByName (parameterName: string): var[]..[]"
-    },
-    {
-      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
-      "Id": "665082668e2141698b4c7ea23e26923e",
-      "NodeType": "StringInputNode",
-      "Inputs": [],
-      "Outputs": [
-        {
-          "Id": "09f3a91eab814220b1a8f37004511aad",
-          "Name": "",
-          "Description": "String",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "Creates a string",
-      "InputValue": "Area"
     }
   ],
   "Connectors": [
@@ -2960,24 +2851,6 @@
       "End": "a14f40340b0e415b914fbd8afd5ba6a5",
       "Id": "3b3a66b42ee54284a89ea33a26ee409a",
       "IsHidden": "False"
-    },
-    {
-      "Start": "041b601078524c2db43b17e9cc9e6c21",
-      "End": "7ca756905b024ea9875eaaadc963a36a",
-      "Id": "1c025e509b124b25ac47fcadf1dd7233",
-      "IsHidden": "False"
-    },
-    {
-      "Start": "17cb9ba78c354c4990aa6b501b8c4d1b",
-      "End": "9f87b382a0be4f7aab28da3b275094a3",
-      "Id": "6b2c5f4e432c4bd681e2616215a09c41",
-      "IsHidden": "False"
-    },
-    {
-      "Start": "09f3a91eab814220b1a8f37004511aad",
-      "End": "479e3de6516a42da80f92be65b0f6f5d",
-      "Id": "3b3d1aabf1fa4b4aa76320bc62bbca7a",
-      "IsHidden": "False"
     }
   ],
   "Dependencies": [],
@@ -3036,8 +2909,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 2925.1227662796714,
-        "Y": 439.70277637784807
+        "X": 3061.9053698503526,
+        "Y": 568.66923117306146
       },
       {
         "Id": "0ebaa75049c94dc6b233e0c0b75f2563",
@@ -3046,8 +2919,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 2394.7853800122862,
-        "Y": 607.03026160729394
+        "X": 2547.2002811339021,
+        "Y": 734.04267920864038
       },
       {
         "Id": "3ea32963e6f14d889ab1029273431657",
@@ -3056,8 +2929,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 1810.2902476005042,
-        "Y": 406.95510621374603
+        "X": 1962.7051487221202,
+        "Y": 533.96752381509248
       },
       {
         "Id": "aec5dbf4aaa94b2587a3540bf9344c92",
@@ -3066,8 +2939,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 792.36419696033772,
-        "Y": 858.56659713356566
+        "X": 1220.2983424171821,
+        "Y": 1016.8436098367819
       },
       {
         "Id": "4872c86d6b2748d6ac65f6f97034d48b",
@@ -3076,8 +2949,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 969.41327493954759,
-        "Y": 728.61961111695814
+        "X": 1397.347420396392,
+        "Y": 886.89662382017434
       },
       {
         "Id": "f2a994b1e8fa4ac8a59c0519db716858",
@@ -3086,8 +2959,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 801.35413761375776,
-        "Y": 571.62717013934844
+        "X": 1229.2882830706021,
+        "Y": 729.90418284256464
       },
       {
         "Id": "f0c6c82ff9af46d198af9fe48268bd7b",
@@ -3096,8 +2969,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 964.10713141700217,
-        "Y": 459.06713947066783
+        "X": 1392.0412768738465,
+        "Y": 617.344152173884
       },
       {
         "Id": "3d957f8dd252446e8adf5cfd29ac3bd2",
@@ -3106,8 +2979,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 984.0301152555694,
-        "Y": 287.902448449692
+        "X": 1411.9642607124138,
+        "Y": 446.17946115290817
       },
       {
         "Id": "93486e91ea1d4a4db021789e6191c32e",
@@ -3116,8 +2989,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 1039.9111808415209,
-        "Y": 123.99715405442441
+        "X": 1467.8453262983653,
+        "Y": 282.27416675764061
       },
       {
         "Id": "a4ef77bb650b49ec9da10e03a45a05c2",
@@ -3126,8 +2999,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 632.74877683530121,
-        "Y": 139.92278719102455
+        "X": 1060.6829222921456,
+        "Y": 298.19979989424075
       },
       {
         "Id": "14ed5856a557466cb8fe83c4278a78da",
@@ -3136,8 +3009,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 289.65779458400038,
-        "Y": 140.67974813534397
+        "X": 717.59194004084475,
+        "Y": 298.95676083856017
       },
       {
         "Id": "3c3c282951dc46dbbc9ab9a3bce450e0",
@@ -3146,8 +3019,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 1711.4320037255668,
-        "Y": 612.249043565532
+        "X": 1863.8469048471827,
+        "Y": 739.26146116687846
       },
       {
         "Id": "4d742aff7aea4423aaa412a1af13aa42",
@@ -3156,8 +3029,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 1697.1409153838042,
-        "Y": 871.593779598729
+        "X": 1849.5558165054201,
+        "Y": 998.60619720007548
       },
       {
         "Id": "3ec9b1873ef844b79089552554ce8a6d",
@@ -3166,8 +3039,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 2075.2397107743054,
-        "Y": 846.38626894179174
+        "X": 2227.6546118959213,
+        "Y": 973.39868654313818
       },
       {
         "Id": "45618f204de54ee39ed570b63d2f4efd",
@@ -3176,8 +3049,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 1811.4645488902413,
-        "Y": 1036.3637864193659
+        "X": 1963.8794500118572,
+        "Y": 1163.3762040207123
       },
       {
         "Id": "0dc4913e8ef140e0a122c61408106745",
@@ -3186,8 +3059,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 2079.1284638018333,
-        "Y": 629.75184551672146
+        "X": 2231.5433649234492,
+        "Y": 756.7642631180679
       },
       {
         "Id": "191a07bb397d4d40943eb12ca567d513",
@@ -3196,8 +3069,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 2357.4793037510667,
-        "Y": 833.83118631774187
+        "X": 2509.8942048726826,
+        "Y": 960.84360391908831
       },
       {
         "Id": "9194114b538840648fa95dd7ae8f3eda",
@@ -3206,8 +3079,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 3239.5801274601104,
-        "Y": 456.50922565859082
+        "X": 3376.3627310307916,
+        "Y": 585.47568045380422
       },
       {
         "Id": "a27a410d16f9410ba41f38f53068b844",
@@ -3216,8 +3089,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 2909.2444184259111,
-        "Y": 765.19993107079347
+        "X": 3046.0270219965919,
+        "Y": 894.166385866007
       },
       {
         "Id": "e98236c2d6554a78bc2372435c38c2ac",
@@ -3226,8 +3099,8 @@
         "IsSetAsOutput": true,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 3350.473349242407,
-        "Y": 678.56721239999843
+        "X": 3487.2559528130882,
+        "Y": 807.53366719521182
       },
       {
         "Id": "59296011c4964ce8a04eead465654f33",
@@ -3236,8 +3109,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 2628.7284762325912,
-        "Y": 603.25308702261725
+        "X": 2765.5110798032724,
+        "Y": 732.21954181783065
       },
       {
         "Id": "83ab2c77fbce4c6aa26d25bb342c906a",
@@ -3246,8 +3119,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 1571.5881573427728,
-        "Y": 1405.2849264093818
+        "X": 1372.8719545002368,
+        "Y": 1450.5301391384103
       },
       {
         "Id": "87a701d3e4cc47d2a87541fd808dd5c6",
@@ -3256,7 +3129,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 2946.7716733404118,
+        "X": 2823.4756721874728,
         "Y": 1718.1222861921717
       },
       {
@@ -3266,7 +3139,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 1598.1041454596098,
+        "X": 1597.1533079326659,
         "Y": 2320.1710769696015
       },
       {
@@ -3276,7 +3149,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 1604.3008799157137,
+        "X": 1603.35004238877,
         "Y": 2061.4875987231117
       },
       {
@@ -3286,7 +3159,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 1588.3941818330709,
+        "X": 1587.4433443061271,
         "Y": 1813.5107610861817
       },
       {
@@ -3296,8 +3169,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 1331.208743312563,
-        "Y": 2186.9398538170417
+        "X": 1347.5253975198721,
+        "Y": 2248.3353799832748
       },
       {
         "Id": "9c878a064ae34a61b8618b2fcc6517c2",
@@ -3306,8 +3179,8 @@
         "IsSetAsOutput": true,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 3357.204427443226,
-        "Y": 2145.7502750830145
+        "X": 3284.3698533042511,
+        "Y": 2178.9273842885668
       },
       {
         "Id": "0fc9242a95d9498f8dcee295b4c032fb",
@@ -3316,7 +3189,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 2954.1211902353875,
+        "X": 2830.8251890824486,
         "Y": 2229.572819313833
       },
       {
@@ -3326,8 +3199,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 2478.4712721435385,
-        "Y": 2197.3838664716491
+        "X": 2318.2887082563702,
+        "Y": 2250.0789560919761
       },
       {
         "Id": "a2607d599eb7478bb5cc848a1d61ca26",
@@ -3336,8 +3209,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 2452.9469636837789,
-        "Y": 2000.5465843650986
+        "X": 2338.082176870093,
+        "Y": 2010.0317004967587
       },
       {
         "Id": "75cdb0ad7ca44d31bd44029dad6e6abe",
@@ -3346,7 +3219,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 2836.2394347833824,
+        "X": 2712.9434336304435,
         "Y": 1982.7678529722166
       },
       {
@@ -3356,7 +3229,7 @@
         "IsSetAsOutput": true,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 3203.7727150201417,
+        "X": 3080.4767138672028,
         "Y": 1690.0589876154017
       },
       {
@@ -3366,7 +3239,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 2632.2027253244219,
+        "X": 2508.9067241714829,
         "Y": 1611.7308725574017
       },
       {
@@ -3376,7 +3249,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 2347.8575231217619,
+        "X": 2224.5615219688229,
         "Y": 1754.7242130994516
       },
       {
@@ -3386,7 +3259,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 1946.1765257350519,
+        "X": 1945.2256882081081,
         "Y": 2216.8217872494615
       },
       {
@@ -3396,7 +3269,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 1934.1930016849219,
+        "X": 1933.2421641579781,
         "Y": 1873.5340097361018
       },
       {
@@ -3406,8 +3279,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 1003.1419005220928,
-        "Y": 2141.2197728371657
+        "X": 1005.1506247754514,
+        "Y": 2140.2332522437318
       },
       {
         "Id": "f749ab090d77467b98ee2b120b589ad0",
@@ -3416,8 +3289,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 1002.1779185248001,
-        "Y": 2350.3769237531228
+        "X": 1004.1866427781588,
+        "Y": 2349.3904031596885
       },
       {
         "Id": "6e5d5012bfe44c948f8a9984cf478da9",
@@ -3426,8 +3299,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 1299.494682743245,
-        "Y": 1584.1417453046017
+        "X": 1205.1343737757265,
+        "Y": 1609.6833976516339
       },
       {
         "Id": "53a3da84158e4ed9a48ced87de2f61ae",
@@ -3436,8 +3309,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 1089.054558834413,
-        "Y": 1435.3269932758317
+        "X": 1026.8037556745919,
+        "Y": 1444.813892719015
       },
       {
         "Id": "eee96d8f74554e5faeabefa0c8d3c621",
@@ -3446,7 +3319,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 752.97552978617159,
+        "X": 752.02469225922778,
         "Y": 1452.0601809552447
       },
       {
@@ -3456,7 +3329,7 @@
         "IsSetAsOutput": true,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 3077.4453721389932,
+        "X": 2954.1493709860538,
         "Y": 1997.2971313568019
       },
       {
@@ -3626,8 +3499,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 1046.1286279020746,
-        "Y": 1929.4832508943259
+        "X": 1017.1609182785737,
+        "Y": 1926.2841278811163
       },
       {
         "Id": "6079d0a11e394403b7189919c577e963",
@@ -3696,8 +3569,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 2504.3204320258978,
-        "Y": -153.52746996570909
+        "X": 2522.276404293978,
+        "Y": -130.10663657256089
       },
       {
         "Id": "d7bc265d405b462c9c8c7dbaf7ff4ca0",
@@ -3746,8 +3619,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 2573.3823150514754,
-        "Y": -375.66876476382993
+        "X": 2514.7215275518952,
+        "Y": -341.39504622474942
       },
       {
         "Id": "e93c1cd00689441d8ece525c98a8cf86",
@@ -3758,53 +3631,13 @@
         "ShowGeometry": true,
         "X": 2599.0434354434205,
         "Y": -560.99857784910887
-      },
-      {
-        "Id": "2676d41337024589b61ab3fe9ce8ffe2",
-        "Name": "Categories",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "ShowGeometry": true,
-        "X": 1196.7714021529969,
-        "Y": 4850.6412234831168
-      },
-      {
-        "Id": "13150e076099428b9e19cc38b72433f0",
-        "Name": "All Elements of Category",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "ShowGeometry": true,
-        "X": 1604.7606068602947,
-        "Y": 4882.6704283376366
-      },
-      {
-        "Id": "b8ddd5ff7d8f4f17af691d4120be2588",
-        "Name": "Element.GetParameterValueByName",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "ShowGeometry": true,
-        "X": 2147.14399536961,
-        "Y": 4901.7207048578121
-      },
-      {
-        "Id": "665082668e2141698b4c7ea23e26923e",
-        "Name": "String",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "ShowGeometry": true,
-        "X": 1940.9495125765361,
-        "Y": 5023.6367075267663
       }
     ],
     "Annotations": [
       {
         "Id": "7b02cf10710a4f52b7559c162990f5b8",
-        "Title": "Wall Size",
-        "DescriptionText": "Description <Double click here to edit group description>",
+        "Title": "Brick Parameters",
+        "DescriptionText": "This script defines the standard dimensions of a brick used for wall construction. ",
         "IsExpanded": true,
         "WidthAdjustment": 0.0,
         "HeightAdjustment": 0.0,
@@ -3817,21 +3650,21 @@
           "affd0bec1bf14983b08df1c2330ed198"
         ],
         "HasNestedGroups": false,
-        "Left": 991.37791852480041,
-        "Top": 1798.6832508943257,
-        "Width": 357.15070937727387,
-        "Height": 683.49367285879725,
+        "Left": 993.38664277815883,
+        "Top": 1785.8841278811162,
+        "Width": 336.16398199729269,
+        "Height": 695.30627527857246,
         "FontSize": 36.0,
         "GroupStyleId": "00000000-0000-0000-0000-000000000000",
-        "InitialTop": 1871.0832508943258,
+        "InitialTop": 1867.8841278811162,
         "InitialHeight": 624.293672858797,
-        "TextblockHeight": 62.4,
+        "TextblockHeight": 72.0,
         "Background": "#FFC1D676"
       },
       {
         "Id": "ca84c256ba684ac996270e9f9f0c50f1",
         "Title": "Floor Finishes",
-        "DescriptionText": "Description <Double click here to edit group description>",
+        "DescriptionText": "This script captures the input parameters related to floor finishes. All measurements must be entered in millimeters (MM). ",
         "IsExpanded": true,
         "WidthAdjustment": 0.0,
         "HeightAdjustment": 0.0,
@@ -3861,13 +3694,13 @@
           "8bd006f0402a43d78f7c6191a0c24cf9"
         ],
         "HasNestedGroups": false,
-        "Left": 279.65779458400038,
-        "Top": 51.597154054424415,
-        "Width": 3456.8155546584067,
-        "Height": 1116.5666323649414,
+        "Left": 707.59194004084475,
+        "Top": 209.87416675764061,
+        "Width": 3165.6640127722435,
+        "Height": 1085.3020372630717,
         "FontSize": 36.0,
         "GroupStyleId": "00000000-0000-0000-0000-000000000000",
-        "InitialTop": 123.99715405442441,
+        "InitialTop": 282.27416675764061,
         "InitialHeight": 1057.3666323649413,
         "TextblockHeight": 62.4,
         "Background": "#FFD4B6DB"
@@ -3875,7 +3708,7 @@
       {
         "Id": "d40cbd2f670e4535a2bb5f501000a138",
         "Title": "Windows",
-        "DescriptionText": "Description <Double click here to edit group description>",
+        "DescriptionText": "This script is used to input the unit cost for door elements. The cost must be entered in the appropriate currency (RM)",
         "IsExpanded": true,
         "WidthAdjustment": 0.0,
         "HeightAdjustment": 0.0,
@@ -3887,7 +3720,8 @@
           "72e726cbaa4b4b76ba4d8a5bd2ef6880",
           "b720356df6794a05b2fb4355d0a6ade7",
           "35f7324608394e7dab166d0bdc0bea98",
-          "a459877d372a451e836f258233681bc2"
+          "a459877d372a451e836f258233681bc2",
+          "7c9dc06fb0a14177819e9c950b9d11a0"
         ],
         "HasNestedGroups": false,
         "Left": 1618.355272945977,
@@ -3904,7 +3738,7 @@
       {
         "Id": "8ac90926271647c1af00091cd6c64129",
         "Title": "Doors",
-        "DescriptionText": "Description <Double click here to edit group description>",
+        "DescriptionText": "This script allows users to enter the unit cost for window elements. Make sure to input the cost in the correct currency format (MYR)",
         "IsExpanded": true,
         "WidthAdjustment": 0.0,
         "HeightAdjustment": 0.0,
@@ -3916,7 +3750,8 @@
           "4251ac4db7694b22a5f298008b47c27d",
           "ef60cbb700644e958d26283e99c6332c",
           "b623e8e3e02a44509d99b94641d09baf",
-          "8c203552d53f460c9a3ab30624a261ee"
+          "8c203552d53f460c9a3ab30624a261ee",
+          "8bd8873111134923804ea51e235fc8ac"
         ],
         "HasNestedGroups": false,
         "Left": 1490.2412600713596,
@@ -3957,7 +3792,7 @@
       {
         "Id": "73d7a7e43a1043c993e65e9cbe7355a6",
         "Title": "Floor Concrete",
-        "DescriptionText": "<Double click here to edit group description>",
+        "DescriptionText": "This script defines the input values for floor concrete dimensions. All measurements must be entered in millimeters (MM). ",
         "IsExpanded": true,
         "WidthAdjustment": 0.0,
         "HeightAdjustment": 0.0,
@@ -3978,18 +3813,18 @@
         "Left": 1420.0052161658077,
         "Top": -633.39857784910885,
         "Width": 2305.4279275156782,
-        "Height": 611.67110788339971,
+        "Height": 635.09194127654791,
         "FontSize": 36.0,
         "GroupStyleId": "00000000-0000-0000-0000-000000000000",
         "InitialTop": -560.99857784910887,
-        "InitialHeight": 509.14121436978547,
+        "InitialHeight": 575.891941276548,
         "TextblockHeight": 62.4,
         "Background": "#FFB9F9E1"
       },
       {
         "Id": "83db451cca6748fcb52f7eedfe11aa0f",
         "Title": "Walls",
-        "DescriptionText": "This group defines the wall size by specifying the brick length in millimeters (mm). Ensure that only numerical values are entered. The value set here will be used for wall dimension calculations in the model.",
+        "DescriptionText": "This group defines the wall size by specifying the brick length in millimeters (mm). Ensure that only numerical values are entered. The value set here will be used for wall dimension calculations in the model. All measurements must be entered in millimeters (MM). ",
         "IsExpanded": true,
         "WidthAdjustment": 0.0,
         "HeightAdjustment": 0.0,
@@ -4015,17 +3850,18 @@
           "eee96d8f74554e5faeabefa0c8d3c621",
           "e3d4a9ee60b74c0888f94e6361c71c8c",
           "97e83d955c86421194adf5b99cef0f8d",
-          "7b02cf10710a4f52b7559c162990f5b8"
+          "7b02cf10710a4f52b7559c162990f5b8",
+          "ba486261836c44bdb094dcbd26317356"
         ],
         "HasNestedGroups": true,
-        "Left": 742.97552978617159,
-        "Top": 1332.8849264093817,
-        "Width": 2993.8288976570543,
-        "Height": 1164.2919973437413,
+        "Left": 742.02469225922778,
+        "Top": 1372.4138927190149,
+        "Width": 2921.9451610450233,
+        "Height": 1123.7765104406737,
         "FontSize": 36.0,
         "GroupStyleId": "00000000-0000-0000-0000-000000000000",
-        "InitialTop": 1405.2849264093818,
-        "InitialHeight": 1105.091997343741,
+        "InitialTop": 1444.813892719015,
+        "InitialHeight": 1105.09199734374,
         "TextblockHeight": 62.4,
         "Background": "#FFC1D676"
       },
@@ -4038,8 +3874,8 @@
         "HeightAdjustment": 0.0,
         "Nodes": [],
         "HasNestedGroups": false,
-        "Left": 1044.9286279020744,
-        "Top": 1879.0832508943258,
+        "Left": 1015.9609182785737,
+        "Top": 1875.8841278811162,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -4052,15 +3888,15 @@
       },
       {
         "Id": "97e83d955c86421194adf5b99cef0f8d",
-        "Title": "DEFAULT OF TOTAL BRICKS BY PALLET IS 660PCS. USER MAY CHANGE THE VALUE",
+        "Title": "DEFAULT COST OF BRICK BY PALLET IS RM 374.40. USER MAY CHANGE THE VALUE",
         "DescriptionText": null,
         "IsExpanded": true,
         "WidthAdjustment": 0.0,
         "HeightAdjustment": 0.0,
         "Nodes": [],
         "HasNestedGroups": false,
-        "Left": 2462.9469636837789,
-        "Top": 1935.7465843650984,
+        "Left": 2342.2887082563702,
+        "Top": 2185.2789560919759,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -4069,7 +3905,7 @@
         "InitialHeight": 0.0,
         "TextblockHeight": 0.0,
         "Background": "#FFC1D676",
-        "PinnedNode": "a2607d599eb7478bb5cc848a1d61ca26"
+        "PinnedNode": "a9e0b89c395e4c82b0bd49b23d3a5e18"
       },
       {
         "Id": "208138c579c940018f7bb6ca8524ea90",
@@ -4080,8 +3916,8 @@
         "HeightAdjustment": 0.0,
         "Nodes": [],
         "HasNestedGroups": false,
-        "Left": 1711.4320037255668,
-        "Top": 561.84904356553193,
+        "Left": 1863.8469048471827,
+        "Top": 688.86146116687837,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -4101,8 +3937,8 @@
         "HeightAdjustment": 0.0,
         "Nodes": [],
         "HasNestedGroups": false,
-        "Left": 1694.3409153838043,
-        "Top": 821.193779598729,
+        "Left": 1846.7558165054202,
+        "Top": 948.20619720007551,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -4114,26 +3950,6 @@
         "PinnedNode": "4d742aff7aea4423aaa412a1af13aa42"
       },
       {
-        "Id": "5f87816dac2246e1850696def75d16cd",
-        "Title": "PLEASE ENTER VALUES IN MILIMETERS (MM) ONLY",
-        "DescriptionText": null,
-        "IsExpanded": true,
-        "WidthAdjustment": 0.0,
-        "HeightAdjustment": 0.0,
-        "Nodes": [],
-        "HasNestedGroups": false,
-        "Left": -32.745420402113609,
-        "Top": 1778.83366952235,
-        "Width": 0.0,
-        "Height": 0.0,
-        "FontSize": 36.0,
-        "GroupStyleId": "00000000-0000-0000-0000-000000000000",
-        "InitialTop": 0.0,
-        "InitialHeight": 0.0,
-        "TextblockHeight": 0.0,
-        "Background": "#FFC1D676"
-      },
-      {
         "Id": "783c4dcc67c845e98bb49669e23e71a6",
         "Title": "PLEASE ENTER VOLUME VALUES IN METERS (M) ONLY",
         "DescriptionText": null,
@@ -4142,8 +3958,8 @@
         "HeightAdjustment": 0.0,
         "Nodes": [],
         "HasNestedGroups": false,
-        "Left": 2549.5204320258977,
-        "Top": -218.3274699657091,
+        "Left": 2567.4764042939778,
+        "Top": -194.9066365725609,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -4163,8 +3979,8 @@
         "HeightAdjustment": 0.0,
         "Nodes": [],
         "HasNestedGroups": false,
-        "Left": 1001.3779185248004,
-        "Top": 2299.9769237531232,
+        "Left": 1003.3866427781588,
+        "Top": 2298.9904031596889,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -4184,8 +4000,8 @@
         "HeightAdjustment": 0.0,
         "Nodes": [],
         "HasNestedGroups": false,
-        "Left": 1013.5419005220929,
-        "Top": 2090.8197728371661,
+        "Left": 1015.5506247754515,
+        "Top": 2089.8332522437322,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -4195,10 +4011,73 @@
         "TextblockHeight": 0.0,
         "Background": "#FFC1D676",
         "PinnedNode": "5a8404212e2f461ab4b906f69cad1605"
+      },
+      {
+        "Id": "8bd8873111134923804ea51e235fc8ac",
+        "Title": "DEFAULT COST DOOR/UNIT IS RM 780. USER MAY CHANGE THE VALUE",
+        "DescriptionText": null,
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [],
+        "HasNestedGroups": false,
+        "Left": 2684.0386796141684,
+        "Top": 3579.7765616475067,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "GroupStyleId": "00000000-0000-0000-0000-000000000000",
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676",
+        "PinnedNode": "4251ac4db7694b22a5f298008b47c27d"
+      },
+      {
+        "Id": "7c9dc06fb0a14177819e9c950b9d11a0",
+        "Title": "DEFAULT OF COST WINDOW/UNIT IS RM 600. USER MAY CHANGE THE VALUE",
+        "DescriptionText": null,
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [],
+        "HasNestedGroups": false,
+        "Left": 2674.0114189066262,
+        "Top": 2897.46831472968,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "GroupStyleId": "00000000-0000-0000-0000-000000000000",
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676",
+        "PinnedNode": "35f7324608394e7dab166d0bdc0bea98"
+      },
+      {
+        "Id": "ba486261836c44bdb094dcbd26317356",
+        "Title": "DEFAULT OF TOTAL BRICKS BY PALLET IS 720pcs. USER MAY CHANGE THE VALUE",
+        "DescriptionText": null,
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [],
+        "HasNestedGroups": false,
+        "Left": 2349.6821768700929,
+        "Top": 1945.2317004967585,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "GroupStyleId": "00000000-0000-0000-0000-000000000000",
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676",
+        "PinnedNode": "a2607d599eb7478bb5cc848a1d61ca26"
       }
     ],
-    "X": 46.592478640575223,
-    "Y": 204.25706410177605,
-    "Zoom": 0.16118729452858377
+    "X": -382.58733792625321,
+    "Y": -652.83406169870887,
+    "Zoom": 0.51519655100925121
   }
 }

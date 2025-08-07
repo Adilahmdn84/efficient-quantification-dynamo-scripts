@@ -1,7 +1,7 @@
 # Dynamo For Quantification Revit
 REMINDER: If you’ve downloaded this script, please consider starring this repo or feel free to leave a comment like “Downloaded and tested, great work!” to let me know it's helping others. Thank You
 
-Dynamo scripts developed for automating the quantification analysis of doors, windows, floor finishes, and brick walls in Autodesk Revit. 
+Dynamo scripts developed for automating the quantification analysis of doors, windows, floor finishes, floor concrete and brick walls in Autodesk Revit. 
 # Dynamo Scripts for Efficient Quantification in Revit
 
 ## Project Overview

@@ -27,6 +27,6 @@ This repository contains custom Dynamo scripts created to automate the quantific
 
 ## Author
 NORADILLAH BINTI HAMDAN  
-Diploma in Construction Technology (BIM)  
+Diploma in Construction Technology of Building Information Modelling (BIM)  
 Kolej Kemahiran Tinggi MARA Sri Gading  
 2025
